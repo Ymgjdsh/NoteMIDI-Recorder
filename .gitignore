@@ -1,0 +1,37 @@
+# gradle
+
+.gradle/
+build/
+out/
+build/classes/
+dist/
+
+# idea
+
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# vscode
+
+.settings/
+.vscode/
+bin/
+.classpath
+.project
+eclipse
+
+# fabric
+
+run/
+*.launch
+
+# javadoc
+
+doc/
+*.log
+*.log.gz
+
+
+docs/web/[0-9]*

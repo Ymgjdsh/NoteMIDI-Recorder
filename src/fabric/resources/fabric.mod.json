@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "jsmacros",
+  "version": "${version}",
+  "name": "Note2MIDI Recorder (JsMacros Backport)",
+  "description": "JsMacros 1.9.x for Minecraft 1.20.4 with passive note-block recording and MIDI Format 1 export.",
+  "authors": [
+    "wagyourtail",
+    "Note2MIDI contributors"
+  ],
+  "contact": {
+    "homepage": "https://wagyourtail.xyz/",
+    "sources": "https://github.com/wagyourtail/JsMacros"
+  },
+  "license": "MPL-2.0",
+  "icon": "assets/jsmacros/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "main": [
+      "xyz.wagyourtail.jsmacros.fabric.client.JsMacrosFabric"
+    ],
+    "client": [
+      "xyz.wagyourtail.jsmacros.fabric.client.JsMacrosFabric"
+    ],
+    "modmenu": [
+      "xyz.wagyourtail.jsmacros.fabric.client.ModMenuEntry"
+    ]
+  },
+  "mixins": [
+    "jsmacros.mixins.json",
+    "jsmacros-fabric.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "minecraft": "1.20.4"
+  }
+}
